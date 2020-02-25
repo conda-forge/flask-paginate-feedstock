@@ -21,11 +21,14 @@ requirements:
     - setuptools
   run:
     - python
+    - pip
     - flask
 
 test:
   imports:
     - flask_paginate
+  commands:
+    - pip check
 
 about:
   home: https://github.com/lixxu/flask-paginate
