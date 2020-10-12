@@ -5,9 +5,13 @@ Home: https://github.com/lixxu/flask-paginate
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-paginate-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pagination support for flask
+
+Development: https://github.com/lixxu/flask-paginate
+
+Documentation: http://flask-paginate.readthedocs.io/
 
 Paginate support for flask framework (study from will_paginate).
 Use bootstrap for css framework It requires Python2.6+ as string.
