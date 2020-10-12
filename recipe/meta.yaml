@@ -1,12 +1,12 @@
 {% set name = "flask-paginate" %}
-{% set version = "0.5.4" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://github.com/lixxu/{{ name }}/archive/{{ version }}.tar.gz
   sha256: 60079a1c4c600cb4d4a9f7c386ea357b5ee02355ae6d6e8b41f769ae3f7af3ad
 
 build:
