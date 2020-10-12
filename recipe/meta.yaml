@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lixxu/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 60079a1c4c600cb4d4a9f7c386ea357b5ee02355ae6d6e8b41f769ae3f7af3ad
+  sha256: 5c22d28d01c523c97b99d74a68ac9d908447527afc6025dab28eec3b1c9544ee
 
 build:
   noarch: python
