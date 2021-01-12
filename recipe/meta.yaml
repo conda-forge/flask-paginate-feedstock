@@ -1,5 +1,5 @@
 {% set name = "flask-paginate" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/lixxu/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 5c22d28d01c523c97b99d74a68ac9d908447527afc6025dab28eec3b1c9544ee
+  sha256: f51be6192f9040892a7d0bff7d4fa0d169b335e81f2863f85f3ff2cb33d1fa4c
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Pagination support for flask'
+  summary: Pagination support for flask
 
   description: |
     Paginate support for flask framework (study from will_paginate). 
