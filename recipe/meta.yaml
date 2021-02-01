@@ -1,5 +1,5 @@
 {% set name = "flask-paginate" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lixxu/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: f51be6192f9040892a7d0bff7d4fa0d169b335e81f2863f85f3ff2cb33d1fa4c
+  sha256: dc129445e24f18055acd8e9007e524db2e3eedb76f9eb16f61f254b2564150d7
 
 build:
   noarch: python
