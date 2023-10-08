@@ -1,5 +1,5 @@
 {% set name = "flask-paginate" %}
-{% set version = "2022.1.8" %}
+{% set version = "2023.10.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lixxu/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 601b1d391943001b7740c7d875caf4e1d89c51eabb8fad92f49ec30be28db606
+  sha256: b97f604e072ad19463cacb46fd775b8b7654967c31fdcb5d905b24162bd515b6
 
 build:
   noarch: python
@@ -16,19 +16,20 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools
   run:
-    - python >=3.6
-    - pip
-    - flask
+    - python >=3.8
+    - flask <3
 
 test:
   imports:
     - flask_paginate
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/lixxu/flask-paginate
